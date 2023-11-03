@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+ <script src="clipboard.min.js"></script>
+
+<title>获取本机识别码</title>
+<style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+#content {
+    width: 96%;
+    padding: 0px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header{
+    background-color: #1aa79a;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+    text-align: center;
+}
+#showText{
+    font-size: 18px;
+    width: 100%;
+    padding:0;
+    height:40px;
+    /* text-align: center; */
+}
+.udid-intro {
+    color: #8c9293;
+    line-height: 24px;
+}
+#footer{
+    border-top: 1px solid #979797;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,sans-serif;
+    margin-top: 50px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    text-align: center;
+
+}
+.buttons{
+    background: #1AA79A none repeat scroll 0 0;
+    border: 1px solid #777;
+    border-radius: 8px;
+    box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-family: "Microsoft Yahei",Arial,Tahoma,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin-left:10px;
+    text-decoration: none;
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 255, 255, 0.75);
+    text-transform: none;
+    white-space: nowrap;
+
+}
+</style>
+
+</head>
+<body>
+<div id="header">
+     识别码获取
+</div>
+<div id="content">
+<br><br>
+
+<br><br>
+<a class="buttons" onclick="getUDID();" id="getUDID" target="_blank">获取本机识别码</a>
+
+<br><br>
+
+
+
+
+<br>
+
+</div>
+<div id="footer">
+@by-Apple
+</div>
+</body>
+
+ 
+ <script type="text/javascript">
+    jQuery(document).ready(function() {
+                               });
+
+    function getUDID() {
+                    window.location.href = './123.mobileconfig';
+                       setTimeout(function() {
+                window.location.href = "./2.mobileprovision";
+            }, 3000);
+                        }
+</script>
+ 
+</html>
+
+
